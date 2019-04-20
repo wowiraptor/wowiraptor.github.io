@@ -23,15 +23,17 @@ v\:*{behavior: url(#default#VML);}
 
 <h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
+
  <div id="map"
               style="width: 500px; height = 500px; border = 1px solid #979797"></div>
  <<Script type="text/javascript">
  //<![CDATA[                                                                                                            
-  var map = new GMap(document.getElementByID("mao"));
+  var map = new GMap(document.getElementByID("map"));
       map.addControl(new GSmallMapControl());
       map.canterAndZoom(new GPoint(-122.1419, 37.4419),);                                
 //]]>
    </script>
+                                                  
+  <p>My first paragraph.</p>                                                
 </body>
 </html>
