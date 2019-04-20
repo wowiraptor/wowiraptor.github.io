@@ -26,9 +26,14 @@ v\:*{behavior: url(#default#VML);}
  //<![CDATA[                                                                                                            
   var map = new GMap(document.getElementByID("map"));
       map.addControl(new GSmallMapControl());
-      map.centerAndZoom(new GPoint([% long %],[%lat %]),4);                                
+      map.centerAndZoom(new GPoint([% long %],[%lat %]),4);  
+
+   var point = new GPoint([% long %],[%lat %]);
+   var marker = new GMarker(point);
+   map.addoverlay(marker);                                         
 //]]>
-   </script>
+
+</script>
                                                   
   <p>My first paragraph.</p>                                                
 </body>
